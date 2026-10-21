@@ -1,16 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
 
 /* Variable globale */
+:root {
+  --highlight: #1cd59e;
+  --background: #041821;
+  --text: #fefefe;
+  --text2: #49575e;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: #fefefe;
+  color: var(--text);
+  text-decoration: none;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #041821;
+  background-color: var(--background);
   min-height: 100vh;
   height: 100%;
   width: 100vw;
@@ -20,7 +28,7 @@ body {
 }
 
 .highlight {
-  color: #1cd59e;
+  color: var(--highlight);
 }
 
 /* header */
@@ -39,8 +47,10 @@ header {
   text-align: center;
 }
 
-#logos i {
+#logos > a,
+#logos > i {
   cursor: pointer;
+  font-size: 1.5em;
 }
 
 /* main */
@@ -59,13 +69,13 @@ h1 {
 
 #presentation {
   width: 80%;
-  color: #49575e;
+  color: var(--text2);
   font-size: 0.9em;
   margin-bottom: 2em;
 }
 
 nav {
-  margin: 0 25%;
+  margin: 2em 25%;
   display: flex;
   margin-bottom: 2em;
   width: 50%;
@@ -86,11 +96,11 @@ nav ul li {
 }
 
 nav ul li.active {
-  background-color: #1cd59e;
+  background-color: var(--highlight);
 }
 
 nav ul li:hover {
-  background-color: #1cd59e;
+  background-color: var(--highlight);
   transition: all 0.3s ease-in-out;
 }
 
@@ -103,8 +113,7 @@ nav ul li:hover {
 }
 
 #gallery img {
-  width: 200px;
-  height: 200px;
+  width: 20%;
   margin: 1em;
   border-radius: 5px;
   transition: all 0.3s ease-in-out;
@@ -121,4 +130,53 @@ footer {
   text-align: center;
   border-top: #808080 1px solid;
   font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  #header-title {
+    margin: 0 0 0.5em 0;
+  }
+
+  #logos > a,
+  #logos > i {
+    margin: 0 0.25em;
+  }
+
+  main {
+    padding: 3em 0.5em;
+  }
+
+  #presentation {
+    width: 100%;
+    font-size: 1.3em;
+  }
+
+  nav {
+    margin: 0 0 1em 0;
+    width: 100%;
+  }
+
+  #gallery {
+    justify-content: space-evenly;
+  }
+
+  #gallery img {
+    width: 30%;
+    height: 30%;
+    margin: 0.5em 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main {
+    padding: 3em 5em;
+  }
+
+  #gallery img {
+    width: 15%;
+  }
 }
