@@ -19,5 +19,3 @@ Créer une page en suivant une maquette.
 ## Github Pages
 
 - https://antonin-it.github.io/FilRouge/
-
-- #SansIA
