@@ -19,3 +19,9 @@ Créer une page en suivant une maquette.
 - **Langage(s)** : HTML, CSS, JS
 - **Frameworks / Bibliothèques** : FontAwesome, picsum
 - **Outils** : VS Code, Git
+
+---
+
+## Github Pages
+
+- https://antonin-it.github.io/FilRouge/
