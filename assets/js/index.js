@@ -39,13 +39,13 @@ const themeToggle = document.getElementById("theme");
 const changeTheme = (theme) => {
   if (theme === "dark") {
     document.documentElement.style.setProperty("--highlight", "#1cd59e");
-    document.documentElement.style.setProperty("--background", "#041821");
+    document.documentElement.style.setProperty("--background", "#031821");
     document.documentElement.style.setProperty("--text", "#fefefe");
     document.documentElement.style.setProperty("--text2", "#49575e");
   } else {
     document.documentElement.style.setProperty("--highlight", "#1cd59e");
     document.documentElement.style.setProperty("--background", "#fefefe");
-    document.documentElement.style.setProperty("--text", "#041821");
+    document.documentElement.style.setProperty("--text", "#031821");
     document.documentElement.style.setProperty("--text2", "#49575e");
   }
 };
