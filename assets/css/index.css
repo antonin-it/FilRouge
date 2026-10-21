@@ -1,1 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+
+/* Variable globale */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fefefe;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #041821;
+  min-height: 100vh;
+  height: 100%;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight {
+  color: #1cd59e;
+}
+
+/* header */
+header {
+  padding: 2em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #808080 1px solid;
+}
+
+#header-title {
+  font-family: "Yeseva One";
+  font-size: 2em;
+  text-align: center;
+}
+
+#logos i {
+  cursor: pointer;
+}
+
+/* main */
+main {
+  flex: 1;
+  padding: 3em 9em;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Yeseva One";
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+#presentation {
+  width: 80%;
+  color: #49575e;
+  font-size: 0.9em;
+  margin-bottom: 2em;
+}
+
+nav {
+  margin: 0 25%;
+  display: flex;
+  margin-bottom: 2em;
+  width: 50%;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+nav ul li {
+  border-radius: 5px;
+  padding: 1%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li.active {
+  background-color: #1cd59e;
+}
+
+nav ul li:hover {
+  background-color: #1cd59e;
+  transition: all 0.3s ease-in-out;
+}
+
+#gallery {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#gallery img {
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+#gallery img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* footer */
+footer {
+  padding: 2em;
+  text-align: center;
+  border-top: #808080 1px solid;
+  font-size: 0.8em;
+}
